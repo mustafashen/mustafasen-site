@@ -10,7 +10,7 @@ export function index(pinnedRepos) {
           <meta name="keywords" content="Mustafa Sen developer, Mustafa Sen software developer, Mustafa Sen web developer, Mustafa Sen frontend developer, Mustafa Şen">
           <meta name="robots" content="index, follow">
           <title>Mustafa Şen - Software Developer</title>
-          <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+          <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>M</text></svg>">
           <style>
               body {
                   font-family: Arial, Helvetica, sans-serif;

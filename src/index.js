@@ -44,7 +44,7 @@ async function getPinnedRepos() {
 async function handleRoute(req, res) {
   const routes = {
     "/": {
-      GET: async () => {
+      GET: async (req, res) => {
         const pinnedRepos = await getPinnedRepos();
         res.writeHead(200, { "Content-Type": "text/html" });
         res.end(index(pinnedRepos));
@@ -58,7 +58,7 @@ async function handleRoute(req, res) {
       const method = req.method.toUpperCase();
       const handler = route[method];
       if (handler) {
-        await handler();
+        await handler(req, res);
       } else throw new Error("Method not allowed");
     } else throw new Error("Route not found");
   } catch (error) {
